@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SphereMesh" id=21]
+
+[sub_resource type="SphereShape" id=22]
+
+[node name="Enemy" type="StaticBody" groups=[
+"Enemy",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8645, 2.12626, 4.53477 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 21 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 22 )

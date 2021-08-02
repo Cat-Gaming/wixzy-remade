@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RickRoll.ogg-4a8245d597cd60b49905a2c5d8e91807.oggstr"
+
+[deps]
+
+source_file="res://RickRoll.ogg"
+dest_files=[ "res://.import/RickRoll.ogg-4a8245d597cd60b49905a2c5d8e91807.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

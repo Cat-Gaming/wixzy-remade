@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SnowMan.obj-19df974254b1d4ecded96732ca8205c1.mesh"
+
+[deps]
+
+files=[ "res://.import/SnowMan.obj-19df974254b1d4ecded96732ca8205c1.mesh" ]
+
+source_file="res://SnowMan.obj"
+dest_files=[ "res://.import/SnowMan.obj-19df974254b1d4ecded96732ca8205c1.mesh", "res://.import/SnowMan.obj-19df974254b1d4ecded96732ca8205c1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

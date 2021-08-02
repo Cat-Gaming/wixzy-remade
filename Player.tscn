@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Weapon.gd" type="Script" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://calm3.ogg" type="AudioStream" id=3]
+[ext_resource path="res://explosion.ogg" type="AudioStream" id=4]
+[ext_resource path="res://RickRoll.ogg" type="AudioStream" id=5]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.75
+height = 1.25
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.75
+mid_height = 1.25
+
+[node name="Player" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+script = ExtResource( 2 )
+acceleration = 2
+
+[node name="rickroll_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -4.0
+
+[node name="audio_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -12.0
+
+[node name="Rifle" type="Node" parent="."]
+script = ExtResource( 1 )
+fire_rate = 0.25
+clip_size = 30
+reload_rate = 3
+
+[node name="Head" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.796601, 0 )
+
+[node name="Camera" type="Camera" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.137875, 0.130492, -0.0443993 )
+
+[node name="RayCast" type="RayCast" parent="Head/Camera"]
+enabled = true
+cast_to = Vector3( 0, 0, -10 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="minecraft_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -3.0

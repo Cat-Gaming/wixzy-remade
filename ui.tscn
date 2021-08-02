@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://cursor.png" type="Texture" id=1]
+
+[node name="ui" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -56.0
+text = "Ammo:
+2/2"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -28.8643
+margin_top = -29.9723
+margin_right = 35.1357
+margin_bottom = 34.0277
+texture = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 426.0
+margin_bottom = 144.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "You can Do what you want but here are some goals!
+Defeat The Enemy's to Win!
+PS: they are the Sphere's!
+Bonus Level in the Parkour, there is A hidden Message Waiting there!
+  
+Good Luck!"
+text = "You can Do what you want but here are some goals!
+Defeat The Enemy's to Win!
+PS: they are the Sphere's!
+Bonus Level in the Parkour, there is A hidden Message Waiting there!
+  
+Good Luck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
